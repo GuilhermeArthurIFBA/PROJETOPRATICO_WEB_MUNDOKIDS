@@ -1,0 +1,790 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: baloo;
+    src: url(fontes/baloo-bhaina.ttf);
+ }
+ @font-face {
+    font-family: bhavuka;
+    src: url(fontes/bhavuka-regular.ttf);
+ }
+body{
+    background-color: #F2CB57;
+}
+.transição{
+    height: 40px;
+    width: 100%;
+    background-color: blue;
+}
+.c1{
+    background-color: #5079F2;
+    height: 10px;
+}
+.c2{
+    background-color: #F2884B;
+    height: 10px;
+}
+.c3{
+    background-color: #6CED67;
+    height: 10px;
+}
+.c4{
+    background-color: #07C7F2;
+    height: 10px;
+}
+
+header{
+    background-color: white;
+    width: 100%;
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.508);
+}
+.containertopo{
+    display: grid;
+    max-width: 1280px;
+    height: 190px;
+    grid-template-columns: 25% 75%;
+    margin: 0 auto;
+}
+header img{
+    margin: 20px 20px 0px 30px;
+}
+header nav{
+    margin: 110px auto 20px auto;
+}
+header nav a{
+    text-decoration: none;
+    justify-content: space-around;
+    font-family: "Atma", sans-serif;
+    margin: auto 10px;
+    padding: 10px;
+    font-size: 38px;
+    
+}
+nav a:hover{
+    background-color: rgb(231, 231, 231);
+    border-radius: 20px;
+}
+#cor1{
+    color: #AD5E31;
+}
+#cor2{
+    color: #05B0D6;
+}
+#cor3{
+    color: #5C9D59;
+}
+#cor4{
+    color: #E36923;
+}
+.banner{
+    max-width: 1600px;
+    margin: auto;
+    height: 550px;
+    background-color: #eae2cb;
+    background-image: url('imagens/banner1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative; /*permite que seus elementos filhos sejam posicionados de forma absoluta em relação a ele.*/
+}
+.textochamada{
+    position: absolute; /* faz com que eles sejam removidos do fluxo normal do documento, evitando que alterem a posição dos outros elementos.*/
+    font-size: 50px;
+    font-family: baloo;
+    color: #ED3434;
+    text-align: right;
+    margin: 100px auto 30px 780px;
+    line-height: 1.1; /* Espaçamento entre linhas 1.5x o tamanho da fonte */
+}
+.botaobanner{
+    margin: 410px auto 30px 860px;
+    position: absolute;
+    font-size: 35px;
+}
+.botaobanner a{
+    background-color: #05B0D6;
+    padding: 22px 15px 15px 15px;
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+    font-family: baloo, sans-serif;
+    box-shadow: 6px 5px 7px rgba(0, 0, 0, 0.250);
+}
+.botaobanner a:hover{
+    background-color: #08cefa;
+}
+.container{
+    margin: auto;
+    display: grid;
+    padding: 20px;
+    max-height: auto;
+    max-width: 1600px;
+}
+.sessao{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 5px; /* Espaçamento entre os elementos */
+    align-items: center; /* Alinha verticalmente os itens */
+    padding: 40px;
+    background-color: white;
+    box-shadow: inset 0px 0px 50px rgba(0, 0, 0, 0.516);
+    border: 10px solid #AD5E31;
+    border-radius: 5px;
+}
+.texto{
+    font-size: 40px;
+    text-align: justify;
+    font-family: bhavuka;
+    width: 100%;
+    margin: 20px 20px auto 70px;
+}
+.imgsessao{
+  padding: 10px 10px 10px 50px;
+  margin: 5px 10px 10px 140px;
+}
+#margindiferente2{
+    margin: 50px 50px 5px -90px;
+}
+.vitrinelinks{
+    max-width: 1600px;
+    margin: 15px auto;
+    display: grid;
+    grid-template-rows: repeat(3, 170px);
+    grid-template-columns: 100%;
+}
+.vitrinelinks a:hover{
+    margin: 3px;
+}
+
+.vitrinelinks a{
+    border-radius: 25px;
+    margin: 10px;
+    text-decoration: none;
+    box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.452);
+    display: flex;
+}
+.vitrinelinks a img{
+    margin: auto 20px;
+    opacity: 0.6;
+}
+.vitrinelinks a #imgdireita{
+    margin: auto auto auto 55%;
+}
+.vitrinelinks a p{
+   text-align: right;
+   width: fit-content;
+   margin: 15px 45px auto auto;
+   font-size: 70px;
+   font-family: baloo;
+   color: #F2CB57;
+}
+.vitrinelinks #botaoinverno{
+    background-color: #4CC3DE;
+}
+.vitrinelinks #botaoferias{
+    background-color: #F27A35;
+}
+.vitrinelinks #botaoferias p{
+text-align: left;
+margin: 20px 40px;
+}
+.vitrinelinks #botaourbana{
+    background-color: #1E1E1E;
+}
+main{
+    background-color: white;
+}
+.banner2{
+    max-width: 1600px;
+    margin: auto;
+    height: 350px;
+    background-color: #AD5E31;
+    background-image: url(imagens/237288-ate-quando-dar-presente-de-dia-das-criancas-para-o-seu-filho.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.banner2 .textochamada{
+    position: absolute;
+    margin-right: 50px;
+}
+.promocoes{
+    margin: 30px auto;
+    max-width: 1280px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+.ofertas{
+    background-color: #FEE9AB;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    min-height: 350px;
+    font-family: baloo;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.250);
+}
+.produtopic img{
+    margin: 25px 20px;
+    object-fit: cover;
+    aspect-ratio: 3/4;
+    max-height: 300px;
+   
+}
+.chamadapreco{
+    height: 100%;
+    width: 100%;
+}
+.chamadapreco h1{
+    font-size: 40px;
+    line-height: 1.0;
+    text-align: center;
+    margin: 23px 40px 0 20px;
+    color: #1E1E1E;
+}
+.chamadapreco h3{
+    font-size: 35px;
+    text-align: center;
+    margin: 5px 35px 5px 7px;
+    color: #72BF6F;
+    min-height: fit-content;
+}
+.chamadapreco p{
+    color: #ED3434;
+    font-size: 15px;
+    margin: -20px 50px;
+    text-align: right;
+}
+.chamadapreco h2{
+    font-size: 52px;
+    margin: -35px 30px;
+    color: #E36923;
+}
+.chamadapreco .botaopromocao{
+    background-color: #5079F2;
+    width: 70%;
+    margin: 15px 27px;
+    border-radius: 10px;
+    padding: 0;
+    display: flex;
+}
+.chamadapreco a{
+    text-decoration: none;
+    margin: 5px auto;
+    align-items: center;
+    color: white;
+    font-size: 35px;
+    text-align: center;
+}
+.chamadapreco .botaopromocao:hover{
+    box-shadow: 5px 2px 8px rgba(0, 0, 0, 0.100);
+    background-color: #05bfe9;
+}
+.feminino, .masculino{
+    max-width: 1450px;
+    grid-template-columns: repeat(4, 1fr);
+    display: grid;
+    grid-template-rows: auto;
+    margin: 40px auto;
+    gap: 20px;
+    font-family: baloo;
+}
+
+.ProdutoF{
+    background-color: #F9D7FF;
+    margin: auto;
+    box-shadow: 0px 8px 5px rgba(0, 0, 0, 0.250);
+}
+.ProdutoF img{
+    margin: 20px 20px 5px 20px;
+    width: 300px;
+    aspect-ratio: 3/3.5;
+    object-fit: cover;
+}
+.ProdutoF a{
+    text-decoration: none;
+    color: #1E1E1E;
+}
+.ProdutoF a:hover{
+    text-decoration: none;
+    color: #df4bfa;
+}
+.ProdutoF, .ProdutoM a:hover{
+    text-decoration: none;
+    color: #5079F2;
+}
+.ProdutoF h1{
+    text-align: center;
+    margin: -10px auto;
+    font-size: 40px;
+}
+.ProdutoF h2{
+    color: #1E1E1E;
+    text-align: left;
+    margin: 5px 20px;
+}
+.ProdutoF .inverno p{
+    margin: 8px 15px 25px 15px;
+    font-size: 20px;
+    background-color: #07C7F2;
+    padding: 0 40px;
+    border-radius: 10px;
+    color: white;
+}
+.ProdutoF .ferias p{
+    margin: 8px 15px 25px 15px;
+    font-size: 20px;
+    background-color: #F27A35;
+    padding: 0 40px;
+    border-radius: 10px;
+    color: white;
+}
+.ProdutoF .urbano p{
+    margin: 8px 15px 25px 15px;
+    font-size: 20px;
+    background-color: #1E1E1E;
+    padding: 0 40px;
+    border-radius: 10px;
+    color: white;
+}
+
+.feminino > h1{
+    grid-column: 1 / 5;
+    margin-top: -20px;
+    font-size: 40px;
+    color: #DD83FE;
+    height: min-content;
+}
+.masculino > h1{
+    grid-column: 1 / 5;
+    margin-top: -20px;
+    font-size: 40px;
+    color: #05B0D6;
+    height: min-content;
+
+}
+.ProdutoF .inverno, .ferias, .urbano{
+    display: flex;
+    justify-content: space-between;
+}
+
+.ProdutoM{
+    background-color: #D7F4FF;
+    margin: auto;
+    box-shadow: 0px 8px 5px rgba(0, 0, 0, 0.250);
+}
+.ProdutoM img{
+    margin: 20px 20px 5px 20px;
+    width: 300px;
+    aspect-ratio: 3/3.5;
+    object-fit: cover;
+}
+.ProdutoM a{
+    text-decoration: none;
+    color: #1E1E1E;
+}
+.ProdutoM h1{
+    text-align: center;
+    margin: -10px auto;
+    font-size: 40px;
+}
+.ProdutoM h2{
+    text-align: left;
+    margin: 5px 20px;
+}
+.ProdutoM .inverno p{
+    margin: 8px 15px 25px 15px;
+    font-size: 20px;
+    background-color: #07C7F2;
+    padding: 0 40px;
+    border-radius: 10px;
+    color: white;
+}
+.ProdutoM .ferias p{
+    margin: 8px 15px 25px 15px;
+    font-size: 20px;
+    background-color: #F27A35;
+    padding: 0 40px;
+    border-radius: 10px;
+    color: white;
+}
+.ProdutoM .urbano p{
+    margin: 8px 15px 25px 15px;
+    font-size: 20px;
+    background-color: #1E1E1E;
+    padding: 0 40px;
+    border-radius: 10px;
+    color: white;
+}
+.ProdutoM .inverno, .ferias, .urbano{
+    display: flex;
+    justify-content: space-between;
+}
+.categoria{
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.250);
+    font-family: baloo;
+    font-size: 32px;
+    text-align: center;
+    border-radius: 10px;
+    height: 105px;
+    width: 95%;
+    color: #F2CB57;
+    margin: 20px auto;
+}
+#categoriaurbana{
+    background-color: #1E1E1E;
+}
+#categoriaferias{
+    background-color: #E36923;
+}
+#categoriainverno{
+    background-color: #05bfe9;
+}
+.vitrinecategorizada{
+    background-color: #F2CB57;
+}
+.banner3{
+    max-width: 1700px;
+    margin: auto;
+    height: 500px;
+    background-color: #eae2cb;
+    background-image: url('imagens/banner3.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#chamadabanner3 h2{
+    width: 480px;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 150px;    
+    text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.250);
+}
+.sobrenos{
+    margin: auto;
+    max-width: 1700px;
+    background-color: white;
+    display: grid;
+    padding: 40px;
+    grid-template-columns: 1fr 30%;
+    grid-auto-rows: auto;
+    grid-template-areas: 
+            'titulo imagem  '
+            'texto imagem'
+            'contatos contatos'
+                          
+    ;
+
+}
+.sobrenos h1{
+    grid-area: titulo;
+    font-family: "Atma", sans-serif;
+    font-weight: normal;
+    font-size: 70px;
+    margin: 0 50px;
+    padding: 10px;
+}
+.sobrenos > p{
+    grid-area: texto;
+    color: rgb(111, 111, 111);
+    font-family: andika, sans-serif;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 55px;
+    margin: 20px 40px;
+    text-align: justify;
+}
+.sobrenos > img{
+    grid-area: imagem;
+    margin: 40px 20px;
+    width: auto;
+    height: 420px;
+    
+}
+
+.contatos{
+    margin-top: 30px;
+    grid-area: contatos;
+    border-radius: 20px;
+    background-color: #4366ce;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-around;
+}
+.emailtelefone{
+    margin: 30px 30px;
+}
+.emailtelefone > h2{
+    color: white;
+    font-family: "Atma", sans-serif;
+    font-weight: normal;
+    font-size: 70px;
+    margin: 0 30px;
+    padding: 20px;
+}
+.emailtelefone > h3{
+    color: white;
+    font-family: "Atma", sans-serif;
+    font-weight: normal;
+    font-size: 45px;
+    margin: 0 30px -20px 30px;
+    padding: 20px;
+}
+.emailtelefone > p{
+    color: white;
+    margin: 0 70px;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.emailtelefone > p > a{
+    color: #08cefa;
+    text-decoration: none;
+}
+.plataformas{
+    grid-area: plataformas;
+    margin: 50px 10px;
+    background-color: #F2CB57;
+    height: 460px;
+    max-width: 460px;
+    border-radius: 20px;
+}
+.plataformas h1{
+    text-align: center;
+    margin: auto;
+}
+.plataformas .icons{
+    display: grid;
+    grid-template-columns: repeat(2, 120px);
+    grid-auto-rows: 120px;
+    gap: 20px;
+    margin: 5px 92px;
+}
+.rodape p{
+    max-width: 1700px;
+    margin: auto;
+    padding: 30px;
+    font-family: 20px;
+    background-color: #D9D9D9;
+}
+.areadecompra{
+    margin: auto;
+    max-width: 1700px;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas: 
+    'vitrine vitrine vitrine vitrine'
+    'vitrine vitrine vitrine vitrine'
+    'vitrine vitrine vitrine vitrine'
+    'descricao descricao descricao selo'
+    'outros outros outros outros'
+    'rodape rodape rodape rodape'
+    ;
+}
+.vitrinecompra{
+    max-height: 80vh;
+    grid-area: vitrine;
+    background-color: #df4bfa;
+    display: flex;
+    justify-content: space-around;
+}
+#masculino{
+    background-color: #4366ce;
+}
+.vitrinecompra > img{
+    margin: 20px auto;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.458);
+    border: 10px groove #E36923 ;
+    max-width: 600px;
+}
+.textovitrine{
+    width: 800px;
+    display: grid;
+    padding: 15px;
+    margin: 22px;
+    border-radius: 10px;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: 110px 130px auto;
+    font-family: baloo, sans-serif;
+    background-color: white;
+    color: #1E1E1E;
+}
+.textovitrine h1{
+    grid-row: 1;
+    grid-column: 1/-1;
+    font-family: baloo, sans-serif;
+    margin: 10px auto;
+    font-size: 70px;
+    color: #1E1E1E;
+}
+.especificacoes{
+    height: 80px;
+    width: 450px;
+    grid-row: 2;
+    grid-column: 1/-1;
+    text-align: center;
+    font-size: 35px;
+    margin: 10px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.especificacoes p{
+    grid-column: 1/-1;
+    margin-top: 5px;
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.500);
+}
+.preco{
+    width: 500px;
+    grid-row: 3;
+    grid-column: 1/-1;
+    margin: -10px auto;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    height: 150px;
+}
+.preco h2{
+    font-size: 80px;
+    font-weight: normal;
+    margin: 0;
+    padding: 5px;
+}
+.preco sup{
+    margin: 0;
+    font-size: 15px;
+    padding: 10px;
+}
+.tipospagamento{
+    grid-column: 1/-1;
+    text-align: center;
+    margin: -30px auto 0 auto;
+    height: auto;
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.botaovitrine{
+    grid-column: 1/-1;
+    height: 90px;
+    width: 400px;
+    margin: 10px auto;
+    background-color: #5079F2;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+}
+.botaovitrine > a{
+    margin: auto;
+    color: white;
+    font-size: 35px;
+    text-decoration: none;
+}
+.botaovitrine:hover{
+    background-color: #4366ce;
+}
+
+.descricao{
+    max-height: 50vh;
+    grid-area: descricao;
+    background-color: white;
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.500);
+    padding: 30px;
+    font-family: andika, sans-serif;
+    line-height: 35px;
+    text-align: justify;
+    font-size: 20px;
+    color: gray;
+}
+.categorialink{
+    background-color: #F27A35;
+    padding: 35px;
+    height: 90px;
+    margin-top: 15px;
+    border-radius: 15px;
+    text-align: center;
+}
+.categorialink > a{
+    font-family: baloo, sans-serif;
+    font-size: 50px;
+    text-decoration: none;
+    color: #F2CB57;
+}
+.categorialink:hover{
+    background-color: #F27A35;
+}
+.selo{
+    max-width: 500px;
+    max-height: 50vh;
+    grid-area: selo;
+    padding: 10px;
+    border: solid 5px #1e1e1e6c;
+    background-color: #AD5E31;
+    background-image: url(imagens/avisopngtrans.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+.selo a{
+    font-size: 50px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+    text-decoration: none;
+    font-weight: 900;
+    line-height: 50px;
+    padding: 25px auto;
+    margin: 20px auto; 
+}
+.selo a > strong{
+    font-size: 55px;
+    font-weight: 900;
+    text-decoration: underline solid;
+}
+.selo > a:hover{
+    font-size: 55px;
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 1.0);
+}
+.selo a > strong:hover{
+    font-size: 60px;
+}
+
+.tabelaproduto{
+    max-height: 50vh;
+    grid-area: outros;
+    padding: 40px;
+}
+.tabelaproduto table{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    font-family: andika, sans-serif;
+    background-color: white;
+    height: 300px;
+    margin:  auto;
+    width: 950px;
+    padding: 25px;
+    border-collapse: collapse;
+}
+.tabelaproduto table th{
+    border: solid 1px black;
+    background-color: darkgray;
+    text-align: center;
+}
+.tabelaproduto table td{
+    border: solid 1px black;
+    padding: 10px;
+    text-align: center;
+}
+.rodapecompras{
+    grid-area: rodape;
+    width: 100%;
+    padding: 20px;
+    background-color: lightgray;
+}
